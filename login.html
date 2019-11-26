@@ -1,58 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Plan zajęć</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/style.css" />
-  </head>
 
-  <body>
-    <div class="page-navbar">
-      <div class="wrapper">
-        <div class="logo-wrapper">
-          <img src="./assets/img/mup.png" alt="" class="logo" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Plan zajęć</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="page-navbar">
+    <div class="wrapper">
+      <div class="logo-wrapper">
+        <img src="./assets/img/mup.png" alt="" class="logo" />
+      </div>
+      <nav class="page-nav">
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a href="#" class="nav-list__link">Logowanie</a>
+          </li>
+        </ul>
+        <div class="avatar">
+          <p class="avatar__text">:)</p>
         </div>
-        <nav class="page-nav">
-          <ul class="nav-list">
-            <li class="nav-list__item">
-              <a href="#" class="nav-list__link">Logowanie</a>
-            </li>
-          </ul>
-          <div class="avatar">
-            <p class="avatar__text">:)</p>
-          </div>
-        </nav>
-      </div>
+      </nav>
     </div>
-    <main class="main">
-      <div class="form-wrapper">
-        <form action="" class="login-form" novalidate>
-          <h2 class="login-form__header">Logowanie</h2>
-          <input
-            type="text"
-            class="login-form__input login-form__input--login"
-            placeholder="Podaj login"
-          />
-          <input
-            type="password"
-            class="login-form__input login-form__input--password"
-            placeholder="Podaj hasło"
-          />
-          <button class="login-form__button">Zaloguj się</button>
-        </form>
-      </div>
-    </main>
-    <footer class="page-footer">
-      <p class="page-footer__paragraph">
-        &copy 2019 - Mazowiecka Uczelnia Publiczna
-      </p>
-    </footer>
-    <script src="./main.js"></script>
-  </body>
+  </div>
+  <main class="main">
+    <div class="form-wrapper">
+      <form action="" class="login-form" novalidate>
+        <h2 class="login-form__header">Logowanie</h2>
+        <input type="text" class="login-form__input login-form__input--login" placeholder="Podaj numer albumu (format: 1234)" />
+        <input type="password" class="login-form__input login-form__input--password" placeholder="Podaj hasło (min. 8 znaków)" />
+        <button class="login-form__button" disabled>Zaloguj się</button>
+      </form>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <p class="page-footer__paragraph">
+      &copy 2019 - Mazowiecka Uczelnia Publiczna
+    </p>
+  </footer>
+  <script src="./main.js"></script>
+</body>
+
 </html>

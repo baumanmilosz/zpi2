@@ -6,7 +6,7 @@
 }
 
 html {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 html body {
@@ -327,6 +327,10 @@ html body .main .form-wrapper .login-form__input::placeholder {
   opacity: 0.5;
 }
 
+html body .main .form-wrapper .login-form__input--invalid {
+  border-bottom: 3px solid red;
+}
+
 html body .main .form-wrapper .login-form__button {
   height: 40px;
   background-color: #fff;
@@ -335,6 +339,12 @@ html body .main .form-wrapper .login-form__button {
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+}
+
+html body .main .form-wrapper .login-form__button:disabled {
+  background-color: #F2F2F2;
+  color: #CEC9C3;
+  cursor: not-allowed;
 }
 
 html body .page-footer {
@@ -356,4 +366,3 @@ html body .page-footer .page-footer__paragraph {
   font-size: 20px;
   color: #fff;
 }
-/*# sourceMappingURL=style.css.map */
